@@ -25,7 +25,7 @@ public class Quadratic {
     }
 
 
-    //prints the roots like this: x = -3, 1
+    //prints the roots like this: x = -3, 1`
     //if no solutions, prints: No solution
     public void printRoots(){
 
@@ -37,4 +37,19 @@ public class Quadratic {
         }
     }
 
+    //Write a getY(double x) method that returns the y value for the input x.
+    //Test this in your main before moving on.
+
+
+    //Write a getVertexX() method.  Remember algebra has a formula.
+    //Test this in your main before moving on.
+
+
+    //Write a getVertexY() method.  You must use the getVertexX method
+    //and the getY methods in your implementation.
+    //Test this in your main before moving on.
+
+
+    //Write a printVertex() method
+    //Test this in your main before moving on.
 }
