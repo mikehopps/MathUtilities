@@ -42,4 +42,14 @@ public class LinearFunction {
 
 
 
+    public void printIntersection(LinearFunction other){
+        double top = other.getyInt() - yInt;
+        double bottom = slope - other.getSlope();
+        double x = top/bottom;
+        double y = getY(x);
+        System.out.println("(" + x + ", " + y + ")");
+    }
+
+
+
 }
