@@ -4,10 +4,11 @@
 public class LineMain {
 
     public static void main(String[] args) {
-        LinearFunction line1 = new LinearFunction(2, 3);
-        LinearFunction line2 = new LinearFunction(1, 1, 2, 5);
+        LinearFunction line1 = new LinearFunction(.4, 3);
+        LinearFunction line2 = new LinearFunction((0.36+0.04), 3);
 
         line1.printIntersection(line2);
+        System.out.println(0.36 + 0.04);
 
     }
 }

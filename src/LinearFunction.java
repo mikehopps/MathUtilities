@@ -43,11 +43,25 @@ public class LinearFunction {
 
 
     public void printIntersection(LinearFunction other){
-        double top = other.getyInt() - yInt;
-        double bottom = slope - other.getSlope();
-        double x = top/bottom;
-        double y = getY(x);
-        System.out.println("(" + x + ", " + y + ")");
+
+        if( Math.abs(slope - other.getSlope()) < 0.000000000001){
+            if( Math.abs(yInt - other.getyInt()) < 0.000000000001 ){ //inf intersects!
+                System.out.println("Infinite Intersections!");
+            }
+            else { //parallel!
+                System.out.println("No intersections!");
+            }
+
+        }
+        else {
+            double top = other.getyInt() - yInt;
+            double bottom = slope - other.getSlope();
+            double x = top / bottom;
+            double y = getY(x);
+            System.out.println("(" + x + ", " + y + ")");
+        }
+
+
     }
 
 
